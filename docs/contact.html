@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet">
+        <script
+            src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="contact.css">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg bg-white shadow-lg rounded-4 py-3">
+            <div class="container">
+                <a class="navbar-brand fw-bold fs-3 text-dark" href="home.html">
+                    <img class="img-fluid" src="./img/cashify_logo.png" alt="Cashify" style="width: 150px; height: auto;">
+                </a>
+                <button class="navbar-toggler border-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-list fs-1 text-dark"></i>
+                </button>
+                <div class="collapse navbar-collapse text-center" id="navbarNav">
+                    <div class="navbar-nav ms-auto text-center">
+                        <a class="nav-link mx-3 text-dark hover-dark"
+                            href="home.html">Home</a>
+                        <a class="nav-link mx-3 text-dark"
+                            href="about.html">About Us</a>
+                        <a class="nav-link mx-3 text-dark hover-dark active fw-bold" href="contact.html">Meet the team</a>
+                        <a
+                            class="btn btn-dark rounded-pill px-4 mx-auto hover-btn"
+                            href="app.html">Scan Now</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <div class="container mt-5 mb-4">
+                <div class="row d-flex justify-content-center">
+                    <h2 class="team-heading text-center">Meet the Team Behind Cashify</h2>
+                </div>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center">
+                    <div class="col">
+                        <a class="text-decoration-none" href="https://www.facebook.com/zxbolinas" target="_blank">
+                        <div class="card h-100 rounded-3 card-padding">
+                            <div class="text-center image-container">
+                                <img src="./img/zac.png" alt="Bolinas" class="rounded-circle profile-image">
+                            </div>
+                            <div class="text-center">
+                                <h5 class="member-name text-white">Bolinas, Zac</h5>
+                                <div class="contact-info">
+                                    <p class="text-white"><i class="fas fa-envelope"></i>zac.bolinas@email.com</p>
+                                    <p class="text-white"><i class="fas fa-phone"></i>0912-345-6789</p>
+                                    <p class="text-white"><i class="fab fa-facebook"></i>Zac Bolinas</p>
+                                </div>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a class="text-decoration-none" href="https://www.facebook.com/shynjsx" target="_blank">
+                        <div class="card h-100 rounded-3 card-padding">
+                            <div class="text-center image-container">
+                                <img src="./img/shane.png" alt="Garnica" class="rounded-circle profile-image">
+                            </div>
+                            <div class="text-center">
+                                <h5 class="member-name text-white">Garnica, Shane</h5>
+                                <div class="contact-info">
+                                    <p class="text-white"><i class="fas fa-envelope"></i>shane.garnica@email.com</p>
+                                    <p class="text-white"><i class="fas fa-phone"></i>0912-345-6789</p>
+                                    <p class="text-white"><i class="fab fa-facebook"></i>Shane Garnica</p>
+                                </div>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a class="text-decoration-none" href="https://www.facebook.com/janceesjhieonguinto" target="_blank">
+                        <div class="card h-100 rounded-3 card-padding">
+                            <div class="text-center image-container">
+                                <img src="./img/jancees.png" alt="Guinto" class="rounded-circle profile-image">
+                            </div>
+                            <div class="text-center">
+                                <h5 class="member-name text-white">Guinto, Jancees</h5>
+                                <div class="contact-info">
+                                    <p class="text-white"><i class="fas fa-envelope"></i>jancees.guinto@email.com</p>
+                                    <p class="text-white"><i class="fas fa-phone"></i>0912-345-6789</p>
+                                    <p class="text-white"><i class="fab fa-facebook"></i>Jancees Guinto</p>
+                                </div>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a class="text-decoration-none" href="https://www.facebook.com/simesrandalll" target="_blank">
+                        <div class="card h-100 rounded-3 card-padding">
+                            <div class="text-center image-container">
+                                <img src="./img/simes.png" alt="Labeste" class="rounded-circle profile-image">
+                            </div>
+                            <div class="text-center">
+                                <h5 class="member-name text-white">Labeste, Simes</h5>
+                                <div class="contact-info">
+                                    <p class="text-white"><i class="fas fa-envelope"></i>simes.labeste@email.com</p>
+                                    <p class="text-white"><i class="fas fa-phone"></i>0912-345-6789</p>
+                                    <p class="text-white"><i class="fab fa-facebook"></i>Simes Labeste</p>
+                                </div>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a class="text-decoration-none" href="https://www.facebook.com/JD.Sanchez.27" target="_blank">
+                        <div class="card h-100 rounded-3 card-padding">
+                            <div class="text-center image-container">
+                                <img src="./img/jd.png" alt="Sanchez" class="rounded-circle profile-image">
+                            </div>
+                            <div class="text-center">
+                                <h5 class="member-name text-white">Sanchez, Jhon Dale</h5>
+                                <div class="contact-info">
+                                    <p class="text-white"><i class="fas fa-envelope"></i>jhondale.sanchez@email.com</p>
+                                    <p class="text-white"><i class="fas fa-phone"></i>0912-345-6789</p>
+                                    <p class="text-white"><i class="fab fa-facebook"></i>Jhon Dale Sanchez</p>
+                                </div>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        
+        <script src="transition.js"></script>
+    </body>
+</html>
