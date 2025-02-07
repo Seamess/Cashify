@@ -1,0 +1,124 @@
+body {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.page-transition {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+
+.nav-link {
+    position: relative;
+    transition: all 0.3s ease;
+    padding: 0.5rem 0 !important;
+    margin: 0.5rem 1rem !important;
+    display: inline-block;
+}
+
+.nav-link:hover {
+    color: #0B05AF !important;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0B05AF;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.active {
+    color: #0B05AF !important;
+    font-weight: 600;
+    padding: 0.5rem 0 !important;
+    margin: 0.5rem 1rem !important;
+}
+
+.active::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0B05AF;
+}
+
+.btn.hover-btn {
+    transition: all 0.3s ease;
+    margin: 0.5rem 1rem !important;
+}
+
+.btn.hover-btn:hover {
+    background-color: #0B05AF !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(11, 5, 175, 0.2);
+}
+
+.prediction-card {
+    transition: all 0.3s ease-in-out;
+    transform-origin: center;
+}
+
+.prediction-card.highlight {
+    animation: pulse 0.5s ease-in-out;
+}
+
+.prediction-container {
+    transition: all 0.3s ease-in-out;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.02);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar-collapse {
+        padding: 1rem 0;
+    }
+    
+    .nav-link {
+        margin: 0.25rem auto !important;
+        display: inline-block;
+    }
+    
+    .btn.hover-btn {
+        margin: 0.5rem 0 !important;
+        width: 200px; 
+        display: block;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .navbar-nav {
+        align-items: center;
+    }
+}
+
